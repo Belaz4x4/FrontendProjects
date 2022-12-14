@@ -8,18 +8,18 @@ html {
     width: 302px;
     height: 462px;
     border: 1px solid #e8e8e8;
-    margin: 50px 52px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    /* padding: 50px; */
+    padding: 50px 37px;
 }
 
 .head {
     font-size: 16px;
     text-align: center;
     color: #212121;
-    margin-top: 50px;
-    
+    margin-top: 0px;
+
 }
 
 .price{
@@ -27,27 +27,24 @@ html {
     font-size: 18px;
     text-align: center;
     color: #5ba2a9;
-    /* margin-top: 35px; */
-
 }
 
 .big_number {
     font-size: 48px;
-    
 }
 
 .content {
-    height: 150px;
     display: flex;
     flex-direction: column;
-/* 
-    margin-top: 49px; */
+    height: 150px;
+    justify-content: space-between;
 }
 
 .position{
     font-size: 14px;
     text-align: center;
     color: #454545;
+    margin: 0px;
 }
 
 .order {
@@ -60,7 +57,9 @@ html {
     text-transform: uppercase;
     color: #5a5a5a;
     font-weight: 700;
-    margin: auto;
+    margin-top: 46px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @font-face { 
