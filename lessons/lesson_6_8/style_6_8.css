@@ -6,10 +6,12 @@ body {
   background-color: #f6f6f6;
 }
 
-.product {
-  height: 500px;
-  width: 1010px;
+.outer-box {
+  text-align: center;
+}
 
+.product {
+  display: inline-block;
   margin: auto;
 
   font-family: Arial, sans-serif;
@@ -20,7 +22,7 @@ body {
 }
 
 .left-side {
-  width: 50%;
+  width: 505px;
 
   display: inline-block;
   margin-right: -5px;
@@ -32,11 +34,12 @@ body {
 }
 
 .right-side {
-  width: 50%;
-  height: 100%;
+  width: 505px;
+  height: 500px;
 
   display: inline-block;
   padding: 64px 48px 64px 20px;
+  text-align: left;
 }
 
 .description {
