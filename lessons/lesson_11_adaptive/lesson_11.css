@@ -32,21 +32,6 @@
   padding: 0;
 }
 
-@media (max-width: 110em) {
-  html {
-    font-size: 9px;
-  }
-
-  .container {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .hero__link:last-child {
-    margin-bottom: 2rem;
-  }
-}
-
 @media (max-width: 105em) {
   html {
     font-size: 8.75px;
@@ -297,7 +282,8 @@ body {
   html {
     font-size: 10px;
   }
-  body {
+  .wrapper {
+    padding-bottom: 4rem;
   }
 
   .container {
@@ -339,6 +325,7 @@ body {
 
   .hero__description {
     margin-bottom: 4rem;
+    max-width: 100%;
 
     font-size: 1.8rem;
     line-height: 130%;
@@ -350,66 +337,54 @@ body {
 
   .hero__link {
     display: block;
-    text-align: center;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero__link:first-child {
-    margin-right: 0;
+    margin-right: auto;
     margin-bottom: 2rem;
   }
 
   .hero__subtext {
-    max-width: 48rem;
-
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 128.6%;
+    max-width: 100%;
   }
-
   .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 6.9rem;
-    padding-bottom: 5.3rem;
-
-    color: #5540bf;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
-
+  .footer .brand {
+    margin-bottom: 2rem;
+  }
   .footer__links {
     display: flex;
     flex-direction: column;
   }
 
   .footer__img__links {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 2.6rem;
-  }
-
-  .footer__img__wrapper {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .footer__img__wrapper:not(:last-child) {
-    margin-right: 1.8rem;
-  }
-
-  .footer__img__wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    justify-content: start;
+    margin-bottom: 2rem;
   }
 
   .footer a {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 137.5%;
+    font-size: 1.4rem;
+  }
+}
 
-    text-decoration: none;
-    color: #5540bf;
+@media (max-width: 110em) {
+  html {
+    font-size: 9px;
+  }
+
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .hero__link:last-child {
+    margin-bottom: 2rem;
   }
 }
