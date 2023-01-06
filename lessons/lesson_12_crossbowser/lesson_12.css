@@ -389,6 +389,22 @@ body {
   }
 }
 
+@media (min-width: 48em) and (max-width: 54.7em) {
+  .hero__link2 {
+    width: 47%;
+    margin-right: 2rem;
+
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .hero__link2:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+  .hero__link2:nth-child(odd) {
+    margin-right: 2rem;
+  }
+}
+
 @media (min-width: 48em) {
   .hero__link:hover {
     background-color: #ffffff;
@@ -404,12 +420,8 @@ body {
   html {
     font-size: 10px;
   }
-  .wrapper {
-    padding-bottom: 4rem;
-  }
 
   .container {
-    /* width: 100%; */
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -428,6 +440,7 @@ body {
 
   .hero .container {
     flex-direction: column-reverse;
+    padding-bottom: 5.5rem;
   }
 
   .hero__img {
@@ -473,6 +486,16 @@ body {
 
   .hero__subtext {
     max-width: 100%;
+  }
+
+  .hero__link2 {
+    width: 100%;
+    max-width: 48rem;
+    margin-right: 0;
+
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .broadcast .container {
