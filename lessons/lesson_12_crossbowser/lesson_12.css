@@ -120,7 +120,6 @@ body {
 
 .wrapper {
   padding-top: 4rem;
-  padding-bottom: 12.1rem;
 
   background: linear-gradient(51.78deg, #5540bf 28.44%, #afa1f9 99.76%);
   color: white;
@@ -170,6 +169,7 @@ body {
 .hero .container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 12.1rem;
 }
 
 .hero__text {
@@ -218,13 +218,6 @@ body {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 48em) {
-  .hero__link:hover {
-    background-color: #ffffff;
-    color: #5540bf;
-  }
-}
-
 .hero__subtext {
   max-width: 48rem;
 
@@ -232,6 +225,40 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 128.6%;
+}
+
+.hero__links__wrapper {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.hero__link2 {
+  display: block;
+  padding: 2.5rem 5rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  text-overflow: ellipsis;
+
+  border: 2px solid #ffffff;
+  border-radius: 10rem;
+}
+
+.hero__link2:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
 .broadcast {
@@ -359,6 +386,17 @@ body {
   .broadcast__img {
     max-width: 50%;
     margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .hero__link:hover {
+    background-color: #ffffff;
+    color: #5540bf;
+  }
+  .hero__link2:hover {
+    border-color: #ffd100;
+    color: #ffd100;
   }
 }
 
